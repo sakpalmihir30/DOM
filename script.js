@@ -1,24 +1,24 @@
-var grow = 0
-var btn = document.querySelector('button');
-var h2 = document.querySelector('h2');
-var inner = document.querySelector('.inner')
+var img = document.querySelector('img')
+var love = document.querySelector('#love')
 
-btn.addEventListener('click', function () {
+img.addEventListener('dblclick', function () {
 
-    btn.style.pointerEvents = 'none';
-    var num = 50 + Math.floor(Math.random() * 50);
-    console.log('your file will be Downloaded in just', num / 10,'secound');
-    var int = setInterval(() => {
-
-        grow++;
-        h2.innerHTML = grow + '%';
-        inner.style.width = grow + '%';
-    }, num);
+    love.style.opacity = 1
+    love.style.transform = ' translate(-50%, -50%) scale(1) rotate(0deg)'
 
     setTimeout(() => {
-        clearInterval(int);
-        btn.innerHTML = 'DOWNLOADED';
-        btn.style.opacity = 0.5;
 
-    }, num * 100);
+        love.style.transform = ' translate(-50%, -350%) scale(1) rotate(60deg)'
+
+    },900);
+
+    setTimeout(() => {
+        love.style.opacity = 0
+
+    }, 1000);
+
+    setTimeout(() => {
+        love.style.transform = ' translate(-50%, -50%) scale(1) rotate(0deg)'
+
+    }, 1200);
 })
