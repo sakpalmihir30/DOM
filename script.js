@@ -1,18 +1,22 @@
+// var allelem = document.querySelectorAll('.elem')
 
-var main = document.body
-// var cursor = document.querySelector('#cursor')
+// allelem.forEach(function (elem) {
+//   elem.childNodes[3].addEventListener('click', function () {
+// console.log('hello');
 
-var h1=document.querySelector('h1')
 
-// main.addEventListener('mousemove', function (val) {
-  
-//       cursor.style.left=val.x +'px'
-//       cursor.style.top=val.y +'px'
+//   });
+
 // })
 
-main.addEventListener('keydown',function(dets){
-  console.log(dets);
-  
-  h1.innerHTML=dets
+var allbtn=document.querySelectorAll('button')
+
+allbtn.forEach(function(elem){
+  elem.addEventListener('click',function(){
+    if(elem.innerHTML == 'ADD FRIEND'){
+      elem.innerHTML='REMOVE FRIEND'
+    }else{
+      elem.innerHTML='ADD FRIEND'
+    }
+  })
 })
-    

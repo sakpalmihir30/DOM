@@ -11,24 +11,23 @@ body {
 }
 
 body {
-   height: 100%;
-   width: 100%;
    background-color: black;
-   /* cursor: none; */
+   color: white;
+   padding: 20px;
+}
+
+.elem {
    display: flex;
    align-items: center;
-   justify-content: center;
-}
-
-#cursor {
-   height: 50px;
-   /* position: fixed; */
-   transform: translate(-50%,-50%);
-}
-h1{
-   padding: 20px 40px;
-   border-radius: 10px;
-   color: white;
+   justify-content: space-evenly;
    background-color: #333;
+   padding: 20px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
 
+button {
+   padding: 10px 20px;
+   background-color: royalblue;
+   color: white;
 }
