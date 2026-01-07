@@ -10,52 +10,25 @@ body {
    width: 100%;
 }
 
-main {
+body {
    height: 100%;
    width: 100%;
    background-color: black;
-   padding: 20px;
+   /* cursor: none; */
    display: flex;
-   gap: 20px;
-   align-items: flex-start;
-   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
 }
 
-.card {
-
-   width: 200px;
-   background-color: white;
-   text-align: center;
-   padding: 5px;
+#cursor {
+   height: 50px;
+   /* position: fixed; */
+   transform: translate(-50%,-50%);
+}
+h1{
+   padding: 20px 40px;
    border-radius: 10px;
-}
+   color: white;
+   background-color: #333;
 
-.card img {
-   height: 150px;
-   width: 150px;
-   border-radius: 50%;
-}
-
-.card h3 {
-   font-size: 25px;
-   white-space: nowrap;
-   margin-bottom: 7pxpx;
-}
-
-.card h4 {
-   margin-bottom: 10px;
-   font-size: 12px;
-   font-weight: 580;
-   color: maroon;
-   text-decoration: underline;
-}
-
-.card h5 {
-   font-size: 10px;
-   margin-bottom: 7px;
-   font-weight: 400;
-}
-
-.card h6 {
-   font-weight: 400;
 }
