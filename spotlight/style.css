@@ -20,5 +20,5 @@ body{
 .box{
     height: 100%;
     width: 100%;
-    background:radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0),black)
+    background:radial-gradient(150px at var(--x) var(--y), white,black)
 }
